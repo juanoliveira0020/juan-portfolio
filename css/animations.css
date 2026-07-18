@@ -1,0 +1,63 @@
+/* ==========================================================================
+   ANIMATIONS.CSS — Keyframes e classes de animação
+   ========================================================================== */
+
+@keyframes glow-float {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-40px, 40px) scale(1.15); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(139, 92, 246, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+@keyframes border-flow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes scroll-wheel {
+  0%   { opacity: 1; top: 6px; }
+  100% { opacity: 0; top: 18px; }
+}
+
+@keyframes ripple-effect {
+  to { transform: scale(3); opacity: 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Classe aplicada via IntersectionObserver (js/animations.js) */
+.reveal-visible {
+  animation: fade-in-up 0.9s var(--ease-out) forwards;
+}
+
+/* Respeita preferência de movimento reduzido do usuário */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

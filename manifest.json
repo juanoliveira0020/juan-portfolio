@@ -1,0 +1,16 @@
+{
+  "name": "Juan Oliveira — Desenvolvedor Full Stack",
+  "short_name": "Juan Oliveira",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#7C3AED",
+  "description": "Portfólio de Juan Oliveira, Desenvolvedor Full Stack.",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}

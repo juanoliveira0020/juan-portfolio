@@ -1,0 +1,101 @@
+/* ==========================================================================
+   VARIABLES.CSS — Design Tokens
+   Todas as cores, fontes e espaçamentos do projeto vivem aqui.
+   Trocar o tema (dark/light) é apenas trocar o atributo [data-theme] no <html>.
+   ========================================================================== */
+
+:root {
+  /* ---------- Cores de marca (roxo) ---------- */
+  --color-primary: #7C3AED;
+  --color-primary-light: #8B5CF6;
+  --color-primary-lighter: #A855F7;
+  --color-primary-dark: #9333EA;
+
+  --gradient-primary: linear-gradient(135deg, #7C3AED 0%, #A855F7 50%, #9333EA 100%);
+  --gradient-text: linear-gradient(90deg, #A855F7 0%, #7C3AED 50%, #8B5CF6 100%);
+  --gradient-border: linear-gradient(135deg, #7C3AED, #A855F7, #9333EA, #7C3AED);
+
+  /* ---------- Tema escuro (padrão) ---------- */
+  --bg-body: #050505;
+  --bg-surface: #09090B;
+  --bg-elevated: #111111;
+  --bg-card: #151515;
+  --bg-card-hover: #1c1c1f;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-strong: rgba(255, 255, 255, 0.16);
+
+  --glass-bg: rgba(9, 9, 11, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --shadow-color: rgba(124, 58, 237, 0.25);
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 60px rgba(124, 58, 237, 0.35);
+
+  /* ---------- Tipografia ---------- */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --fs-hero: clamp(2.8rem, 8vw, 7rem);
+  --fs-h1: clamp(2.2rem, 5vw, 3.8rem);
+  --fs-h2: clamp(1.8rem, 4vw, 2.6rem);
+  --fs-h3: clamp(1.2rem, 2.5vw, 1.6rem);
+  --fs-body: clamp(0.95rem, 1.2vw, 1.05rem);
+  --fs-small: 0.85rem;
+
+  /* ---------- Espaçamentos ---------- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  --section-padding: clamp(4rem, 10vh, 8rem) clamp(1.5rem, 6vw, 6rem);
+  --container-width: 1280px;
+
+  /* ---------- Bordas / raio ---------- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* ---------- Transições ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-medium: 0.4s var(--ease-out);
+  --transition-slow: 0.8s var(--ease-out);
+
+  /* ---------- Z-index scale ---------- */
+  --z-cursor: 9999;
+  --z-navbar: 1000;
+  --z-modal: 900;
+  --z-particles: 1;
+}
+
+/* ---------- Tema claro ---------- */
+[data-theme='light'] {
+  --bg-body: #FAFAFA;
+  --bg-surface: #F4F4F5;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F4F4F5;
+
+  --text-primary: #0A0A0A;
+  --text-secondary: #52525B;
+  --text-muted: #A1A1AA;
+
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-color-strong: rgba(0, 0, 0, 0.14);
+
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(0, 0, 0, 0.06);
+
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 60px rgba(124, 58, 237, 0.18);
+}

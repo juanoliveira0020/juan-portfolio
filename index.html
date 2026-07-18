@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Juan Oliveira — Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio de Juan Oliveira, Desenvolvedor Full Stack especializado em React, React Native, Node.js e MySQL. Confira projetos, tecnologias e experiência." />
+  <meta name="keywords" content="Juan Oliveira, desenvolvedor full stack, react, react native, node.js, portfolio, desenvolvedor web" />
+  <meta name="author" content="Juan Oliveira" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://juanoliveira.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Juan Oliveira — Desenvolvedor Full Stack" />
+  <meta property="og:description" content="Portfólio de Juan Oliveira, Desenvolvedor Full Stack especializado em React, React Native, Node.js e MySQL." />
+  <meta property="og:image" content="/assets/images/og-cover.jpg" />
+  <meta property="og:url" content="https://juanoliveira.dev/" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Juan Oliveira — Desenvolvedor Full Stack" />
+  <meta name="twitter:description" content="Portfólio de Juan Oliveira, Desenvolvedor Full Stack." />
+  <meta name="twitter:image" content="/assets/images/og-cover.jpg" />
+
+  <!-- Favicon / manifest -->
+  <link rel="icon" type="image/png" href="/assets/icons/favicon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#7C3AED" />
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan Oliveira",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "url": "https://juanoliveira.dev/",
+    "sameAs": [
+      "https://github.com/juanoliveira",
+      "https://linkedin.com/in/juanoliveira"
+    ],
+    "knowsAbout": ["React", "React Native", "Node.js", "Express", "MySQL", "JavaScript", "TypeScript"]
+  }
+  </script>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Barra de progresso de scroll -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Fundo de partículas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" role="banner">
+    <a href="#home" class="nav-logo">Juan<span>.</span>Dev</a>
+
+    <nav class="nav-links" role="navigation" aria-label="Navegação principal">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#tecnologias" class="nav-link">Tecnologias</a>
+      <a href="#github" class="nav-link">GitHub</a>
+      <a href="#contato" class="nav-link">Contato</a>
+      <a href="/assets/curriculo-juan-oliveira.pdf" class="btn btn-primary btn-sm nav-cta-mobile" download>Baixar Currículo</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Alternar tema claro/escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <a href="/assets/curriculo-juan-oliveira.pdf" class="btn btn-primary btn-sm resume-btn" download>Baixar Currículo</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag"><span class="dot"></span> Disponível para novos projetos</span>
+
+          <h1 class="hero-title">Juan Oliveira</h1>
+
+          <p class="hero-role">
+            <span data-typewriter='["Desenvolvedor Full Stack", "Especialista em React & Node.js", "Criador de experiências digitais"]'></span><span class="type-cursor" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-desc">
+            Transformo ideias em produtos digitais completos — do front-end ao back-end —
+            com foco em performance, design moderno e código de qualidade.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+          </div>
+
+          <div class="hero-socials" aria-label="Redes sociais">
+            <a href="https://github.com/juanoliveira" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.11 2.91.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/juanoliveira" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.83v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.15V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg>
+            </a>
+            <a href="mailto:contato@juanoliveira.dev" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo-frame" data-tilt>
+            <div class="photo-inner">
+              <img src="assets/images/icon-juan.jpg" alt="Foto de perfil de Juan Oliveira" width="360" height="480" loading="eager" />
+            </div>
+          </div>
+          <div class="hero-float-card card-1" data-reveal>
+            <strong>Full Stack</strong> React + Node.js
+          </div>
+          <div class="hero-float-card card-2" data-reveal>
+            <strong>Mobile</strong> React Native + Expo
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="mouse"></span>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ==================== SOBRE ==================== -->
+    <section id="sobre" class="section about">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Sobre mim</span>
+        <h2 class="section-title">Quem é <span class="gradient-text">Juan Oliveira</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card" data-reveal>
+          <div class="about-photo">
+            <img src="assets/images/juan-profile.jpeg" alt="Juan Oliveira trabalhando" loading="lazy" />
+          </div>
+          <h3>Juan Oliveira</h3>
+          <span>Desenvolvedor Full Stack</span>
+        </div>
+
+        <div class="about-text">
+          <p data-reveal>
+            Desenvolvedor Full Stack com experiência em aplicações Web e Mobile utilizando
+            React, React Native, Node.js, Express e MySQL. Apaixonado por criar interfaces
+            modernas, sistemas completos e experiências digitais de alta qualidade.
+          </p>
+          <p data-reveal data-delay="0.1s">
+            Atuo do planejamento à entrega: arquitetura de back-end, modelagem de banco de
+            dados, construção de APIs REST seguras e interfaces front-end pensadas para
+            performance e usabilidade.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item" data-reveal data-delay="0.05s">
+              <span class="stat-number"><span data-count="20">0</span><span class="suffix">+</span></span>
+              <span class="stat-label">Projetos</span>
+            </div>
+            <div class="stat-item" data-reveal data-delay="0.1s">
+              <span class="stat-number"><span data-count="100">0</span><span class="suffix">+</span></span>
+              <span class="stat-label">Commits</span>
+            </div>
+            <div class="stat-item" data-reveal data-delay="0.15s">
+              <span class="stat-number"><span data-count="4">0</span></span>
+              <span class="stat-label">Tecnologias Principais</span>
+            </div>
+            <div class="stat-item" data-reveal data-delay="0.2s">
+              <span class="stat-number"><span data-count="100">0</span><span class="suffix">%</span></span>
+              <span class="stat-label">Responsivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECNOLOGIAS ==================== -->
+    <section id="tecnologias" class="section technologies">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Stack técnica</span>
+        <h2 class="section-title">Tecnologias que <span class="gradient-text">domino</span></h2>
+        <p class="section-subtitle">Ferramentas que uso no dia a dia para construir produtos completos.</p>
+      </div>
+
+      <div class="tech-grid">
+        <!-- Cada item usa data-tilt para o efeito 3D leve (js/animations.js) -->
+        <div class="tech-card" data-tilt data-reveal><div class="tech-icon">JS</div><h4>JavaScript</h4><p>Lógica e interatividade em toda a stack.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.05s"><div class="tech-icon">TS</div><h4>TypeScript</h4><p>Tipagem estática para código mais seguro.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.1s"><div class="tech-icon">R</div><h4>React</h4><p>Interfaces reativas e componentizadas.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.15s"><div class="tech-icon">RN</div><h4>React Native</h4><p>Apps mobile nativos com uma única base.</p></div>
+        <div class="tech-card" data-tilt data-reveal><div class="tech-icon">EX</div><h4>Expo</h4><p>Fluxo ágil para apps React Native.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.05s"><div class="tech-icon">N</div><h4>Node.js</h4><p>Back-end escalável em JavaScript.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.1s"><div class="tech-icon">EJ</div><h4>Express</h4><p>APIs REST rápidas e minimalistas.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.15s"><div class="tech-icon">SQL</div><h4>MySQL</h4><p>Modelagem e consultas relacionais.</p></div>
+        <div class="tech-card" data-tilt data-reveal><div class="tech-icon">H</div><h4>HTML5</h4><p>Semântica e acessibilidade na base.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.05s"><div class="tech-icon">C</div><h4>CSS3</h4><p>Layouts modernos com Grid e Flexbox.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.1s"><div class="tech-icon">V</div><h4>Vite</h4><p>Build rápido para projetos front-end.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.15s"><div class="tech-icon">G</div><h4>Git & GitHub</h4><p>Versionamento e colaboração em equipe.</p></div>
+        <div class="tech-card" data-tilt data-reveal><div class="tech-icon">JWT</div><h4>JWT</h4><p>Autenticação segura baseada em tokens.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.05s"><div class="tech-icon">API</div><h4>REST API</h4><p>Integração entre front-end e back-end.</p></div>
+        <div class="tech-card" data-tilt data-reveal data-delay="0.1s"><div class="tech-icon">◱</div><h4>Responsividade</h4><p>Experiência consistente em qualquer tela.</p></div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section id="projetos" class="section projects">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Trabalhos</span>
+        <h2 class="section-title">Projetos em <span class="gradient-text">destaque</span></h2>
+        <p class="section-subtitle">Uma seleção de aplicações que desenvolvi do zero.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-tilt data-reveal>
+          <div class="project-image"><img src="assets/images/icon-osg.png" alt="Tela do projeto Study Online Group" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Study Online Group</h3>
+            <p>Plataforma para organização de grupos de estudo online com salas, materiais e cronograma colaborativo.</p>
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>MySQL</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt data-reveal data-delay="0.1s">
+          <div class="project-image"><img src="assets/images/icon-godrinking.png" alt="Tela do projeto Go Driking" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Go Driking</h3>
+            <p>Aplicativo mobile para criar lembretes para o usuario beber água.</p>
+            <div class="project-tags"><span>React Native</span><span>Expo</span><span>Node.js</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt data-reveal data-delay="0.2s">
+          <div class="project-image"><img src="assets/images/icon-saep.png" alt="Tela do projeto SAEP" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>SAEP</h3>
+            <p>Sistema de gerenciamento de uma loja de ferramentas.</p>
+            <div class="project-tags"><span>React</span><span>Express</span><span>MySQL</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt data-reveal data-delay="0.3s">
+          <div class="project-image"><img src="assets/images/icon-zenvy.png" alt="Tela do projeto Zenvy" loading="lazy" /></div>
+          <div class="project-body">
+            <h3>Zenvy</h3>
+            <p>Plataforma de agendamento para serviços como barbearia, manicure, spa, etc.</p>
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>JWT</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== TIMELINE ==================== -->
+    <section class="section timeline-section">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Trajetória</span>
+        <h2 class="section-title">Minha <span class="gradient-text">evolução</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-reveal>
+          <span>Início</span>
+          <h3>Primeiros passos nos estudos</h3>
+          <p>Início dos estudos em lógica de programação, HTML, CSS e JavaScript.</p>
+        </div>
+        <div class="timeline-item" data-reveal data-delay="0.1s">
+          <span>Prática</span>
+          <h3>Primeiros projetos</h3>
+          <p>Desenvolvimento de pequenos projetos pessoais para consolidar a base técnica.</p>
+        </div>
+        <div class="timeline-item" data-reveal data-delay="0.2s">
+          <span>Formação</span>
+          <h3>Projetos acadêmicos</h3>
+          <p>Aplicação dos conhecimentos em projetos acadêmicos com times e prazos reais.</p>
+        </div>
+        <div class="timeline-item" data-reveal data-delay="0.3s">
+          <span>Mobile</span>
+          <h3>Aplicações mobile</h3>
+          <p>Expansão para desenvolvimento mobile com React Native e Expo.</p>
+        </div>
+        <div class="timeline-item" data-reveal data-delay="0.4s">
+          <span>Full Stack</span>
+          <h3>Projetos Full Stack</h3>
+          <p>Construção de sistemas completos, unindo front-end, back-end e banco de dados.</p>
+        </div>
+        <div class="timeline-item" data-reveal data-delay="0.5s">
+          <span>Atualmente</span>
+          <h3>Projetos de gestão</h3>
+          <p>Foco em sistemas de gestão robustos, escaláveis e orientados a resultados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GITHUB ==================== -->
+    <section id="github" class="section github-section">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Open Source</span>
+        <h2 class="section-title">Atividade no <span class="gradient-text">GitHub</span></h2>
+        <p class="section-subtitle">Estatísticas atualizadas automaticamente via GitHub Readme Stats.</p>
+      </div>
+
+      <div class="github-grid">
+        <div class="github-card" data-reveal><span class="value">100+</span><span class="label">Commits</span></div>
+        <div class="github-card" data-reveal data-delay="0.05s"><span class="value">20+</span><span class="label">Repositórios</span></div>
+        <div class="github-card" data-reveal data-delay="0.1s"><span class="value">—</span><span class="label">Estrelas</span></div>
+        <div class="github-card" data-reveal data-delay="0.15s"><span class="value">—</span><span class="label">Forks</span></div>
+      </div>
+
+      <div class="github-embed" data-reveal>
+        <!-- Integração automática via github-readme-stats. Troque "juanoliveira" pelo usuário real. -->
+        <img src="https://github-readme-stats.vercel.app/api?username=juanoliveira&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&title_color=A855F7&icon_color=7C3AED&text_color=A1A1AA" alt="Estatísticas do GitHub de Juan Oliveira" loading="lazy" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=juanoliveira&layout=compact&theme=dark&hide_border=true&bg_color=00000000&title_color=A855F7&text_color=A1A1AA" alt="Linguagens mais usadas por Juan Oliveira" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ==================== SERVIÇOS ==================== -->
+    <section id="servicos" class="section services">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">O que eu faço</span>
+        <h2 class="section-title">Serviços <span class="gradient-text">oferecidos</span></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-reveal>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+          <h3>Desenvolvimento Web</h3>
+          <p>Sites e sistemas web modernos, rápidos e responsivos.</p>
+        </div>
+        <div class="service-card" data-reveal data-delay="0.05s">
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <h3>Desenvolvimento Mobile</h3>
+          <p>Aplicativos multiplataforma com React Native e Expo.</p>
+        </div>
+        <div class="service-card" data-reveal data-delay="0.1s">
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 17V7a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg></div>
+          <h3>Criação de APIs</h3>
+          <p>APIs REST seguras, documentadas e escaláveis.</p>
+        </div>
+        <div class="service-card" data-reveal data-delay="0.15s">
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m18 0V5a2 2 0 00-2-2h-4m0 18h4a2 2 0 002-2v-4M3 15v4a2 2 0 002 2h4"/></svg></div>
+          <h3>Integração Front + Back</h3>
+          <p>Comunicação eficiente entre interface e servidor.</p>
+        </div>
+        <div class="service-card" data-reveal>
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/></svg></div>
+          <h3>Banco de Dados</h3>
+          <p>Modelagem e otimização de bancos relacionais.</p>
+        </div>
+        <div class="service-card" data-reveal data-delay="0.05s">
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 12L3 7l9-5 9 5-9 5z"/></svg></div>
+          <h3>UI/UX</h3>
+          <p>Interfaces intuitivas orientadas à experiência do usuário.</p>
+        </div>
+        <div class="service-card" data-reveal data-delay="0.1s">
+          <div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div>
+          <h3>Consultoria</h3>
+          <p>Orientação técnica para escolha de stack e arquitetura.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section id="contato" class="section contact">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Vamos conversar</span>
+        <h2 class="section-title">Entre em <span class="gradient-text">contato</span></h2>
+        <p class="section-subtitle">Tem um projeto em mente? Me envie uma mensagem.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card" data-reveal>
+          <div class="contact-info-item">
+            <span class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+            <div><span>Email</span><strong>juanoliveira20071@gmail.com</strong></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C9.8 9 9.2 7.6 9 7c-.2-.5-.3-.5-.5-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 22a10 10 0 100-20 10 10 0 000 20z"/></svg></span>
+            <div><span>WhatsApp</span><strong>+55 (11) 96304-0814</strong></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.83v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.15V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg></span>
+            <div><span>LinkedIn</span><strong>/in/juanoliveira</strong></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.11 2.91.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></span>
+            <div><span>GitHub</span><strong>/juanoliveira0020</strong></div>
+          </div>
+        </div>
+
+        <form class="contact-form" novalidate data-reveal data-delay="0.1s">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Sobre o que é o projeto?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Conte um pouco mais..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">Juan<span>.</span>Dev</a>
+        <p>Transformando ideias em experiências digitais.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <ul>
+          <li><a href="https://github.com/juanoliveira" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/juanoliveira" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:contato@juanoliveira.dev">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Juan Oliveira. Todos os direitos reservados.</span>
+      <div class="footer-socials">
+        <a href="https://github.com/juanoliveira" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.9c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.11 2.91.85.09-.67.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
+        <a href="https://linkedin.com/in/juanoliveira" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.83v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.15V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" aria-label="Voltar ao topo">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- GSAP (biblioteca leve de animação, via CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Scripts do projeto -->
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
